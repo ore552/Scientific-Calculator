@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Scientific Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <form class="form">
+                <div class="display">
+                    <input type="text" class="result">
+                </div>
+
+                <div>
+                    <input type="button" class="red operator" value="AC">
+                    <input type="button" class="operator percent" value="%" onclick="display('%')">
+                    <input type="button" class="operator" value="."  onclick="display('.')">
+                    <input type="button" class="operator" value="/"  onclick="display('/')">
+                </div>
+
+                <div>
+                    <input type="button" class="operator sine" value="sine" >
+                    <input type="button" class="operator sqrtR" value="sqrtR">
+                    <input type="button" class="operator cube" value="r^3">
+                    <input type="button" class="operator square" value="r^2">
+                </div>
+
+                <div>
+                    <input type="button" class="operator" value="7"  onclick="display('7')">
+                    <input type="button" class="operator" value="8"  onclick="display('8')">
+                    <input type="button" class="operator" value="9"  onclick="display('9')">
+                    <input type="button" class="operator" value="*"  onclick="display('*')">
+                </div>
+
+                <div>
+                    <input type="button" class="operator" value="4"  onclick="display('4')">
+                    <input type="button" class="operator" value="5"  onclick="display('5')">
+                    <input type="button" class="operator" value="6"  onclick="display('6')">
+                    <input type="button" class="operator" value="-"  onclick="display('-')">
+                </div>
+
+                <div>
+                    <input type="button" class="operator" value="1" onclick="display('1')">
+                    <input type="button" class="operator" value="2" onclick="display('2')"> 
+                    <input type="button" class="operator" value="3" onclick="display('3')">
+                    <input type="button" class="operator" value="+" onclick="display('+')">
+                </div>
+
+                <div>
+                    <input type="button" class="operator" value="00" onclick="display('00')">
+                    <input type="button" class="operator" value="0" onclick="display('0')">
+                    <input type="button" class="operator equal" value="=">
+                    <input type="button" class="operator pi" value="pi">
+                </div>
+
+                <!-- <div>
+                    <input type="button" class="operator" value="(" onclick="display('(')">
+                    <input type="button" class="operator" value=")" onclick="display(')')">
+                    <input type="button" class="operator" value="/" onclick="display('/')">
+                    <input type="button" class="operator" value="x" onclick="display('x')">
+                </div> -->
+            </form>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
